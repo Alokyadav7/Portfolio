@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        My-Portfolio
+    </title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="social-icon">
+                    <a href="#"><i class="fa-solid fa-a"></i></a>
+                    <a href="#"><i class="fa-solid fa-l"></i></a>
+                    <a href="#"><i class="fa-solid fa-o"></i></a>
+                    <a href="#"><i class="fa-solid fa-k"></i></a><br><br>
+                </div>
+
+                <!--<img src="img/logo.png.jpg" class="logo">--->
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fas fa-bars" id="cross" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <!--<p>Full Stack Developer</p>--->
+                <h1><span>Hii</span> i' am<span> Yadav</span> Alok.</h1><br>
+                <h2><span> Web Developer</span> & Programmer.</h2>
+            </div>
+        </div>
+    </div>
+    <!----about------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/alokmain2.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <hr><br>
+                    <p>
+                        Full-stack developers design and create websites and applications for various
+                        platforms. I as a developer works on both the front end (client-side) and the back end
+                        (server-side) of a website or application. I handle projects involving databases, APIs, or
+                        designing user-facing websites, as well as interacting with clients during development.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Technical skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Soft skills</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Font-End</span><br>User interfaces, Designing Web/App interfaces</li>
+                            <li><span>Back-End</span><br>Working on server-side software, which focuses on everything
+                                you can't see on a website. Back-end developers ensure the website performs correctly,
+                                focusing on databases, back-end logic, application programming and API.</li>
+                            <li><span>Database</span><br>Mangining the data of our system in secure manner.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>HTML5 and CSS</span><br>HTML is the language for describing the structure of Web
+                                pages.CSS is the language for describing the presentation of Web pages, including
+                                colors, layout, and fonts.</li>
+                            <li><span>JavaScript</span><br>Lightweight, cross-platform, single-threaded, and interpreted
+                                compiled programming language</li>
+                            <li><span>PHP and MYSQL</span><br>I can work on both PHP and MYSQL</li>
+                            <li><span>FLUTTER</span><br>It allows you to create a native mobile application with only
+                                one codebase</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Communication skills</span><br> Listening, Speaking, Observing and Empathising
+                            </li>
+                            <li><span>Problem-solving skills</span><br>Ability to identify problems, brainstorm and
+                                analyze answers, and implement the best solutions.</li>
+                            <li><span>Analytical thinking</span><br>Observe, research and interpret a subject to develop
+                                complex ideas and solutions.</li>
+                            <li><span>Time management skills</span><br>Planning, organizing, and consciously building
+                                good productivity habits.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------services------->
+    <div id="Services">
+        <div class="container">
+            <center>
+                <h1 class="sub-title">My Services</h1>
+            </center>
+            <hr>
+            <div class="services-list">
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Font-End</h2><br>
+                    <p>I handle projects involving databases, APIs, or designing user-facing websites, as well as
+                        interacting with clients during development.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop"></i>
+                    <h2>Back-End</h2><br>
+                    <p>I handle projects involving databases, APIs, or designing user-facing websites, as well as
+                        interacting with clients during development.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Database</h2><br>
+                    <p>I handle projects involving databases, APIs, or designing user-facing websites, as well as
+                        interacting with clients during development.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------portfolio------>
+    <div id="Portfolio">
+        <div class="container">
+            <center>
+                <h1 class="sub-title">My Work</h1>
+            </center>
+            <hr>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/work-1.png">
+                    <div class="layer">
+                        <h3>Mobile Application</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quaerat voluptatum sed eius</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="img/work-2.png">
+                    <div class="layer">
+                        <h3>Web Application</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quaerat voluptatum sed eius</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="img/Musicgram.jpg">
+                    <div class="layer">
+                        <h3>Music Player</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quaerat voluptatum sed eius</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="img/MY-cv.docx" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!------contact------>
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <hr><br>
+                    <p><i class="fa-sharp fa-solid fa-envelope"></i>yalok0318@gmail.com</p>
+                    <p> <i class="fa-brands fa-whatsapp"></i>9106967161</p>
+                    <div class="social-icon">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <a href="img/MY-cv.docx" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" required placeholder="Enter Your Name">
+                        <input type="email" name="Email" required placeholder="Enter Your Email">
+                        <textarea name="Message" rows="6" name="Message" required placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright-2023 By Yadav Alok</p>
+        </div>
+    </div>
+
+    <!-------js--------->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("side-menu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby6frRqaF_0X2irBNtKNMXo0vdhQatALYmdKjuVkNn16z9Epu-f4f1g9a99uY-FZ5L2mw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response =>{ 
+                    msg.innerHTML = "Message send to YADAV ALOK successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+         })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <!-- font awesome cdn link  -->
+    <script src="https://kit.fontawesome.com/a42a02687f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
